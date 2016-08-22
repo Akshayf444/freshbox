@@ -1,0 +1,81 @@
+@font-face {
+	font-family: 'Helvetica LT Std Cond Light';
+	src: url('helveticaltstd-lightcond.eot');
+	src: local('☺'), url('helveticaltstd-lightcond.woff') format('woff'), url('helveticaltstd-lightcond.ttf') format('truetype'), url('helveticaltstd-lightcond.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+textarea:focus, input:focus{
+    outline: 0;
+}
+*:focus {
+    outline: 0;
+}
+*{ margin:0; padding:0; box-sizing:border-box;}
+::before, ::after{ box-sizing:border-box;}
+a, :hover{ text-decoration:none; color:inherit;}
+html, body{height:100%;}
+section, header, nav, article, footer, div, aside{display:block;}
+body{ font-size:16px; font-family:'Helvetica LT Std Cond Light'; color:#4c4c4c; background:url(../tel-images/bg.jpg) repeat left top; background-size:100% auto; height:100%;}
+.main-wrapper{ width:96%; margin:0 auto; position:fixed; left:0; right:0; bottom:0; height:calc(100% - 180px - 2%); z-index:10; }
+.main-header{ width:96%; margin:0 auto; clear:both;}
+.logo{ float:left; margin:2% 0 0 0; position:fixed;}
+.ourwork{ float:right; margin:2% 0 0 0; position: fixed; right:40px;}
+.main-nav-content{ clear:both; width:100%; height:100%;   }
+.sayhello{/* position:fixed; right:40px; bottom:0px; cursor:pointer;*/
+bottom: 0;
+    clear: both;
+   
+    right: 0;
+    
+  }
+.socialmedia{ position:absolute; left:40px; bottom:2%; transition-duration:0.6s; cursor:pointer;
+}
+.socialmedia img{ float:left; transition-duration:0.6s; cursor:pointer; width:50px; height:auto}
+
+.socialmedia img:hover{ opacity:0.60;}
+
+.socialmedia1 {
+    position: fixed;
+    right: 0;
+    top: 40%;
+}
+
+.socialmedia1 > a{ display:block;}
+
+.bogs{ font-size:18px; color:#999; text-align:justify; padding:15px 15px 15px 0px; margin-bottom:20px; border-bottom:1px solid #333}
+.contetn {
+    background: #fff none repeat scroll 0 0;
+    left: 0;
+	top:15%;
+    margin: 0 auto;    
+    width: 60%;
+	position:absolute;
+	right:0;
+	overflow:auto;
+	padding:5px; border:1px solid #F00;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+
+.contetn p {
+    font-size: 16px;
+    padding: 0px 15px 15px;
+    text-align: justify;
+}
+
+.contetn h3 {
+    color: #b90808;
+    font-size: 18px;
+    text-align: left;
+}
+.bogs h4{ font-size:14px; color:#000000; margin-bottom:4px;}
+@media all and (max-width: 1499px) and (min-width: 1366px) {
+	
+	.main-wrapper{ width:96%; margin:0 auto; position:fixed; left:0; right:0; bottom:0; height:calc(100% - 120px - 2%); }
+	.socialmedia1 img {
+    height: auto;
+    width: 30px;
+}
+	}
+	

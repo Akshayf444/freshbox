@@ -1,0 +1,39 @@
+@font-face {
+	font-family: 'Helvetica LT Std Cond Light';
+	src: url('helveticaltstd-lightcond.eot');
+	src: local('☺'), url('helveticaltstd-lightcond.woff') format('woff'), url('helveticaltstd-lightcond.ttf') format('truetype'), url('helveticaltstd-lightcond.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+   font-family: 'Helvetica LT Std Cond Light';
+    text-align: center;
+	background:url(../../../tel-images/bg.jpg) center top no-repeat; background-size:100% auto;
+}
+
+strong { font-weight: 500; }
+
+a, a:hover, a:focus {
+	color: #de615e;
+	text-decoration: none;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+
+h1, h2 {
+	margin-top: 10px;
+	font-size: 38px;
+    font-weight: 100;
+    color: #555;
+    line-height: 50px;
+}
+
+h3 {
+	font-size: 22px;
+    font-weight: 300;
+    color: #555;
+    line-height: 30px;
+}
+
+img { max-width: 100%; }
+
+.row{ width:960px; background:}

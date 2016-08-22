@@ -1,0 +1,48 @@
+
+Host Name:                 ADMIN-PC
+OS Name:                   Microsoft Windows 7 Ultimate 
+OS Version:                6.1.7600 N/A Build 7600
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          Admin
+Registered Organization:   
+Product ID:                00426-292-0000007-85290
+Original Install Date:     25-Aug-14, 6:17:05 PM
+System Boot Time:          27-Jul-16, 10:30:15 AM
+System Manufacturer:       Gigabyte Technology Co., Ltd.
+System Model:              H81M-S
+System Type:               X86-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: x64 Family 6 Model 60 Stepping 3 GenuineIntel ~1800 Mhz
+BIOS Version:              American Megatrends Inc. F1, 11-Jun-14
+Windows Directory:         C:\Windows
+System Directory:          C:\Windows\system32
+Boot Device:               \Device\HarddiskVolume1
+System Locale:             en-us;English (United States)
+Input Locale:              en-us;English (United States)
+Time Zone:                 (UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi
+Total Physical Memory:     3,469 MB
+Available Physical Memory: 959 MB
+Virtual Memory: Max Size:  6,937 MB
+Virtual Memory: Available: 2,939 MB
+Virtual Memory: In Use:    3,998 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    WORKGROUP
+Logon Server:              \\ADMIN-PC
+Hotfix(s):                 5 Hotfix(s) Installed.
+                           [01]: KB2425227
+                           [02]: KB2533552
+                           [03]: KB2534366
+                           [04]: KB958488
+                           [05]: KB971468
+Network Card(s):           2 NIC(s) Installed.
+                           [01]: Realtek PCIe GBE Family Controller
+                                 Connection Name: Local Area Connection
+                                 DHCP Enabled:    No
+                                 IP address(es)
+                                 [01]: 192.168.2.60
+                                 [02]: fe80::a445:687a:f41c:c943
+                           [02]: TeamViewer VPN Adapter
+                                 Connection Name: Local Area Connection 3
+                                 Status:          Media disconnected
