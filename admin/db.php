@@ -1,5 +1,9 @@
 <?php
 
+////PHPMAILER
+require_once(dirname(__FILE__) . '/phpMailer/class.phpmailer.php');
+require_once(dirname(__FILE__) . '/phpMailer/class.smtp.php');
+
 $url = explode("/", $_SERVER['PHP_SELF']);
 array_pop($url);
 define('BASE_URL', 'http://' . $_SERVER['HTTP_HOST'] . join("/", $url) . '/');
@@ -180,8 +184,37 @@ function sendsms($mobile, $messages) {
     return $output;
 }
 
-function sendmail($email, $message) {
-    
+function sendmail($email, $name, $message) {
+
+    $mail = new PHPMailer(true); // the true param means it will throw exceptions on errors, which we need to catch
+
+    $mail->IsSMTP(); // telling the class to use SMTP
+
+    try {
+        $mail->SMTPAuth = true;                  // enable SMTP authentication
+        $mail->SMTPSecure = "ssl";                 // sets the prefix to the server
+        $mail->Host = "smtpout.asia.secureserver.net";      // sets the SMTP server
+        $mail->Port = 465;                   // set the SMTP port for the MAIL server
+        $mail->Username = "bisupport@instacom.in";  //  username
+        $mail->Password = "bi@123$%^";            // password
+
+        $mail->FromName = "BI-Tracking";
+        $mail->From = "bisupport@instacom.in";
+        $mail->AddAddress($email, $name);
+        $mail->Subject = "BI-Tracking Login Details";
+
+        $mail->IsHTML(true);
+
+        $mail->Body = <<<EMAILBODY
+{$message}
+EMAILBODY;
+
+        $mail->Send();
+    } catch (phpmailerException $e) {
+        echo $e->errorMessage(); //Pretty error messages from PHPMailer
+    } catch (Exception $e) {
+        echo $e->getMessage(); //Boring error messages from anything else!
+    }
 }
 
 function paging($perpage = 1, $totalcount = 0) {
@@ -193,7 +226,7 @@ function renderPaging($pages, $url) {
     if ($pages > 0) {
         echo '<div class="right">';
         for ($i = 1; $i <= $pages; $i++) {
-            echo '<a href="' . $url .$i. '">' . $i . '</a>';
+            echo '<a href="' . $url . $i . '">' . $i . '</a>';
         }
         echo '</div>';
     }

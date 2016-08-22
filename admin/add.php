@@ -2,7 +2,7 @@
 include_once'./db.php';
 
 $page = isset($_GET['page']) && $_GET['page'] > 0 ? $_GET['page'] : 1;
-$perpage = 10;
+$perpage = 20;
 $totalcount = countVideo();
 $totalcount = $totalcount->videocount;
 $offset = offset($page, $perpage);
@@ -73,7 +73,7 @@ if (isset($_POST['type']) && $_POST['type'] == 'add') {
     <div class="table">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>
-                <th width="13"><input type="checkbox" class="checkbox" /></th>
+<!--                <th width="13"><input type="checkbox" class="checkbox" /></th>-->
                 <th>Title</th>
                 <th>Email</th>
                 <th>Client Name</th>
@@ -85,7 +85,7 @@ if (isset($_POST['type']) && $_POST['type'] == 'add') {
                 while ($row = mysqli_fetch_object($videos)) {
                     ?>
                     <tr>
-                        <td><input type="checkbox" class="checkbox" /></td>
+<!--                        <td><input type="checkbox" class="checkbox" /></td>-->
                         <td class="title"><h3><a href="video.php?path=<?php echo $row->path; ?>" class="view"><?php echo $row->title; ?></a></h3></td>
                         <td class="client_email"><?php echo $row->client_email; ?></td>
                         <td style="display: none" class="description"><?php echo $row->description; ?></td>
